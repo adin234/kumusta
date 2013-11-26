@@ -71,6 +71,12 @@
 				background: radial-gradient(ellipse at center,  #5fe697 0%,#5fe697 41%,#2ecc71 100%); /* W3C */
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5fe697', endColorstr='#2ecc71',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 			}
+			#bottom .solo {
+				display: block;
+			}
+			#bottom .double {
+				display: inline-block;
+			}
 			h1,h3,h6{
 				margin: 0;
 			}
@@ -202,6 +208,9 @@
 				#results h4::after{
 					display: none;
 				}
+				#bottom .double {
+					display: block;
+				}
 			}
 			@media screen and (max-width: 768px) {
 				#top #container{
@@ -211,6 +220,9 @@
 				}
 				.ggl, .bph, .rbrd, .dswd{
 					width: 100%;
+				}
+				#bottom .double {
+					display: block;
 				}
 			}
 			@media screen and (max-width: 480px) {
@@ -229,6 +241,9 @@
 				}
 				.fb{
 					width: 100%;
+				}
+				#bottom .double {
+					display: block;
 				}
 			}
 		</style>
@@ -286,14 +301,17 @@
 		
 		<section id="bottom">
 			<h3>MGA KASOSYO</h3>
-			<a target="_blank" href="//beta.globe.com.ph"><img src="imgs/globe.png" width="480px" height="196px" alt="Globe"/></a>
-			<br />
-			<a target="_blank" href="//google.org/personfinder/"><img src="imgs/google.png" width="auto" height="70px" alt="Google Person Finder"/></a>
-			<a target="_blank" href="//google.org/personfinder/"><img src="http://ncddp.dswd.gov.ph/Media/uploads/DSWD_logo-NEW_format[1].jpg" width="auto" height="70px" alt="Google Person Finder"/></a>
-			<br />
-			<a target="_blank" href="//reliefboard.com"><img src="imgs/reliefboard.png" width="auto" height="70px" alt="ReliefBoard"/></a>
-			<a target="_blank" href="//bangonph.com"><img src="imgs/bangonph.png" width="auto" height="70px" alt="BangonPH"/></a>
-			<br />
+			<div class="solo">
+			<a target="_blank" class="solo" href="//beta.globe.com.ph"><img src="imgs/globe.png" width="480px" height="196px" alt="Globe"/></a>
+			</div>
+			<div class="solo">
+			<a target="_blank" class="double" href="//google.org/personfinder/"><img src="imgs/google.png" width="auto" height="70px" alt="Google Person Finder"/></a>
+			<a target="_blank" class="double" href="//google.org/personfinder/"><img src="http://ncddp.dswd.gov.ph/Media/uploads/DSWD_logo-NEW_format[1].jpg" width="auto" height="70px" alt="Google Person Finder"/></a>
+			</div>
+			<div class="solo">
+			<a target="_blank" class="double" href="//reliefboard.com"><img src="imgs/reliefboard.png" width="auto" height="70px" alt="ReliefBoard"/></a>
+			<a target="_blank" class="double" href="//bangonph.com"><img src="imgs/bangonph.png" width="auto" height="70px" alt="BangonPH"/></a>
+			</div>
 			<span id="copyright">The background image is copyrighted by <a target="_blank" href="//CNN.com">CNN.com</a></span>
 			<span id="copyright">Stratovate Devteam. 2013. Tinidorin ang proyektong ito sa <a target="_blank" href="https://github.com/pprmint/kumusta">https://github.com/pprmint/kumusta</a></span>
 		</section>
